@@ -18,11 +18,11 @@ int main(void)
 
 	if ((n % 10) != 0)
 	{
-		printf("less than 6 and not 0\n");
-	}
-	else
-	{
 		printf(" 0\n");
+	}
+	else if ((n % 10) > s)
+	{
+		printf("less than 6 and not 0\n");
 	}
 	return (0);
 }
