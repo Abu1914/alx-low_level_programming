@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.hi>
 
 /**
 * main - Prints all possible combinations of two two-digit numbers
@@ -22,9 +22,10 @@ int main(void)
 	continue;
 	putchar(',');
 	putchar(' ');
-	}
-	}
 	putchar('\n');
-
+	}
+	}
+	}
+	printTwoDigitNumbers();
 	return (0);
 }
