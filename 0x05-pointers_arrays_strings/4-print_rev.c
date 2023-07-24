@@ -3,6 +3,7 @@
 /**
  * print_rev - prints the reverse of a string
  * count: used to count from frist to end, counter: used to count from back
+ * @s: str input
  * Return: string in reverse
  */
 
