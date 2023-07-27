@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strncat - used to cencetenate two strings but to use at most n bytes
+ *_strncat - used to concatenate two strings but to use at most n bytes
  * @dest: pointer
  * @src: second pointer
  * @n: number of bytes to use from src
