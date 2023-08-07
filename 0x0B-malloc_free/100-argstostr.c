@@ -33,11 +33,11 @@ char *argstostr(int ac, char **av)
 		int c = 0;
 
 	if (ac == 0 || av == 0)
-			return (NULL);
+		return (NULL);
 
 	for (a = 0; a < ac; a++)
 	{
-			lenght = lenght + lenghtofstring(av[a]);
+		lenght = lenght + lenghtofstring(av[a]);
 	}
 	lenght = lenght + ac + 1;
 
@@ -45,8 +45,8 @@ char *argstostr(int ac, char **av)
 
 	if (str == NULL)
 	{
-			free(str);
-			return (NULL);
+		free(str);
+		return (NULL);
 	}
 	for (a = 0; a < ac; a++)
 	{
