@@ -32,24 +32,26 @@ char *argstostr(int ac, char **av)
 		int b = 0;
 		int c = 0;
 
-		if (ac == 0 || av == 0)
+	if (ac == 0 || av == 0)
 			return (NULL);
 
-		for (a = 0; a < ac; a++)
-		{
+	for (a = 0; a < ac; a++)
+	{
 			lenght = lenght + lenghtofstring(av[a]);
-		}
-		lenght = lenght + ac + 1;
+	}
+	lenght = lenght + ac + 1;
 
-		str = malloc(sizeof(char) * lenght);
+	str = malloc(sizeof(char) * lenght);
 
-		if (str == NULL)
-		{
+	if (str == NULL)
+	{
 			free(str);
 			return (NULL);
-		}
-		for (a = 0; a < ac; a++)
-		{
+	}
+	for (a = 0; a < ac; a++)
+	{
+		for (b = 0;  b < lenghtofstring(av[a]); b++)
+		{	
 			str[c] = av[a][b];
 			c++;
 		}
