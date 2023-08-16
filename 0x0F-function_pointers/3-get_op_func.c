@@ -7,7 +7,7 @@
  * @s: the operand to look out for
  * Return: the function used
  */
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
